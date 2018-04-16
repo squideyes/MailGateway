@@ -1,0 +1,50 @@
+﻿// Copyright 2018 Louis S.Berman.
+//
+// This file is part of MailGateway.
+//
+// MailGateway is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published 
+// by the Free Software Foundation, either version 3 of the License, 
+// or (at your option) any later version.
+//
+// MailGateway is distributed in the hope that it will be useful, but 
+// WITHOUT ANY WARRANTY; without even the implied warranty of 
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the GNU 
+// General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with MailGateway.  If not, see <http://www.gnu.org/licenses/>.
+
+
+using System.Net;
+using System.Net.Mail;
+
+namespace SmtpSendDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SendSmtpMessageViaSmtp();
+        }
+
+        private static void SendSmtpMessageViaSmtp()
+        { 
+            var client = new SmtpClient("localhost", 54321)
+            {
+                Credentials = new NetworkCredential("louis", "ABC123")
+            };
+
+            var message = new MailMessage
+            {
+                From = new MailAddress("louis@squideyes.com")
+            };
+
+            message.To.Add("louis@squideyes.com");
+            message.Body = "Body Test Goes Here";
+            message.Subject = "Subject Text Goes Here";
+
+            client.Send(message);
+        }
+    }
+}
