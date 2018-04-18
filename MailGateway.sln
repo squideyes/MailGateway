@@ -14,6 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{1E9A7B5F-8923-4E57-AAE7-530D29FA4DAF}"
 	ProjectSection(SolutionItems) = preProject
 		License.txt = License.txt
+		MailGateway.sln.licenseheader = MailGateway.sln.licenseheader
 		README.md = README.md
 	EndProjectSection
 EndProject
