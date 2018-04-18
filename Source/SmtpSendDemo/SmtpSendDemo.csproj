@@ -3,6 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Product>MailGateway</Product>
+    <Company>Louis S. Berman</Company>
+    <Authors>Louis S. Berman</Authors>
+    <Description>A simple mail-sender to exercise the Gateway code</Description>
+    <Copyright>Copyright 2018 Louis S. Berman</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

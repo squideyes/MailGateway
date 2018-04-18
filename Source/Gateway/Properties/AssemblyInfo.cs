@@ -23,11 +23,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Gateway")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("An SMTP to SendGrid Email Gateway")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Gateway")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCompany("Louis S. Berman")]
+[assembly: AssemblyProduct("MailGateway")]
+[assembly: AssemblyCopyright("Copyright 2018 Louis S. Berman")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>MailGateway</Product>
+    <Company>Louis S. Berman</Company>
+    <Authors>Louis S. Berman</Authors>
+    <Description>A collection of common helper classes and shared objects</Description>
+    <Copyright>Copyright 2018 Louis S. Berman</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
