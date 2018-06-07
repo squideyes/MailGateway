@@ -40,7 +40,7 @@ namespace SmtpSendDemo
             };
 
             message.To.Add("louis@squideyes.com");
-            message.Body = "Body Test Goes Here";
+            message.Body = "Body Text Goes Here";
             message.Subject = "Subject Text Goes Here";
 
             client.Send(message);
